@@ -1,0 +1,230 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling Q2*/
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #2C3E50;
+    background-color: #F9FBFC;
+    background-image: url('../assets/images/eau.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* Container Styling Q3*/
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for content class */
+.content {
+    line-height: 1.8; /* Line height set to 1.8 (Q4) */
+    padding: 20px;/* 20px padding on all sides (Q4) */
+    background-color: #FFFFFF; /* Clean white background for content */
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Styling for header, nav, and footer  Q5 */
+header, footer {
+    background-color: #A3D5E3;/* Light background */
+    color: #2C3E50;/* Dark font color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for the unordered list inside nav */
+nav ul {
+    list-style: none;
+    padding: 10px; /* 10px padding (Q6) */
+}
+
+/* Styling for list items inside nav */
+nav ul li {
+    display: inline-block;/* Display horizontally (Q7) */
+    margin-right: 30px;/* Margin of 30px on the right (Q7) */
+}
+
+/* Styling for anchor links inside nav */
+nav ul li a {
+    text-decoration: none;
+    color: #2C3E50;
+    font-weight: bold;
+    text-transform: uppercase; /* Text in uppercase (Q7) */
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #629AA9;/* Hover link color (Q8) */
+}
+
+a {
+    color: #2C3E50;/* Any color (Q9) */
+    text-decoration: none;/* No underline (Q9) */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+/* Styling for headings h1, h2, h3 */
+h1, h2, h3 {
+    color: #2C3E50;
+    margin: 20px 0;/* 20px margin all around (Q10) */
+    text-transform: uppercase;/* Uppercase letters (Q10) */
+    letter-spacing: 2px;
+
+}
+/* Specific font size for headings Q10*/
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+
+/* Image Styling (Centered) */
+.img-centre {
+    display: block;/* Make it block-level element (Q11) */
+    margin: 20px auto;/* Centered with 20px margin on top and bottom (Q11) */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video, audio {
+    display: block;/* Make it block-level element (Q12) */
+    margin: 20px auto;}
+
+table {
+    width: 100%; /* Table width (Q13) */
+    margin: 20px auto; /* Centered with 10px margin top/bottom (Q13) */
+    border-collapse: collapse;/* Collapsed borders (Q13) */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;/* Border for table cells (Q14/Q15) */
+}
+
+th {
+    background-color: #629AA9;/* Light background color (Q14) */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styling */
+footer {
+    font-size: 80%;/* 80% font size of the body (Q17) */
+    text-align: center;/* Text centered (Q17) */
+    padding: 10px 0;/* Padding 1px top/bottom, 0px right/left (Q17) */
+    background-color: #A3D5E3;
+    color: #2C3E50;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+iframe {
+    display: block; /* Make it block-level element (Q18) */
+    margin: 20px auto; /* Centered with 20px margin on top and bottom (Q18) */
+}
+
+fieldset {
+    border: 1px solid #ddd;/* Border style (Q19) */
+    margin: 20px 0;/* Centered with margin 20px top/bottom (Q19) */
+    padding: 20px;
+    background-color: #F9FBFC;
+}
+
+legend {
+    color: #2C3E50;
+    padding: 0 10px;
+    font-style: italic; /* Italic text (Q20) */
+}
+
+
+/* Form Elements (like a contact form) */
+input[type="submit"] {
+    background-color: #629AA9;/* Background color (Q21) */
+    color: white;/* Text color (Q21) */
+    padding: 10px 20px;/* Padding (Q21) */
+    border: none;/* Border style (Q21) */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #457B88;/* Change background color on hover (Q22) */
+    transform: scale(1.05);
+}
+
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #457B88;
+    transition: width 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+a:hover {
+    color: #457B88; /* Change color on hover (Q9) */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+ol {
+    margin-left: 20px; /* Adjust this value for the indentation you want */
+    padding-left: 20px; /* Adding padding for the bullets/numbers */
+}
+
+
+ol ol {
+    margin-left: 40px;
+    padding-left: 20px;
+}
+
+
+ol li a {
+    text-decoration: none;
+    color: #2C3E50;
+}

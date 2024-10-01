@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - The Stripped Umbrella</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav>
+            <img src="./assets/images/su_banner.gif">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2>Contact Us</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-name">First Name:* </label>
+                <input type="text" id="first-name" name="first-name" maxlength="25" required><br>
+                <label for="last-name">Last Name:* </label>
+                <input type="text" id="last-name" name="last-name" maxlength="25" required><br>
+                <label for="email">Email:* </label>
+                <input type="text" id="email" name="email"  required><br>
+
+                <div class="container">
+                    <p>Please select the music genre(s) that you like :</p>
+
+                    <form action="your_form_submission_url" method="POST">
+
+                        <label><input type="checkbox" name="music" value="classic"> Classic</label><br>
+                        <label><input type="checkbox" name="music" value="jazz"> Jazz</label><br>
+                        <label><input type="checkbox" name="music" value="blues"> Blues</label><br>
+                        <label><input type="checkbox" name="music" value="instrumental"> Instrumental</label><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Message</legend>
+
+                <label for="how-heard">How did you hear about us?</label>
+                <select id="how-heard" name="how-heard">
+                    <option value="website">Our website</option>
+                    <option value="friends">Friends</option>
+                    <option value="tv">TV Adv.</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <label>Would you recommend us to your friends ?</label>
+                <input type="radio" id="yes" name="recommend" value="yes" checked> Yes
+                <input type="radio" id="no" name="recommend" value="no"> No
+                <input type="radio" id="maybe" name="recommend" value="no"> Maybe
+
+                <label for="message">Your request:</label>
+                <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+
+                <label>Subscribe to newsletter:</label>
+                <input type="radio" id="subscribe-yes" name="subscribe" value="yes" checked> Yes
+                <input type="radio" id="subscribe-no" name="subscribe" value="no"> No<br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+
+
+
+        </form>
+
+
+        <h3>Find us here</h3>
+        <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.4806960980943!2d-79.38818378434762!3d43.64884797912198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cf0ff00c2f%3A0x10006b8b5247b71!2sFour%20Seasons%20Toronto%20Spa!5e0!3m2!1sen!2sca!4v1631382418145!5m2!1sen!2sca"
+                width="600"
+                height="450"
+                >
+        </iframe>
+    </main>
+
+    <footer>
+        Copyright © 2023 ILAC and EFREI Paris – HTML-CSS major lab-work - created by: BECKER Lilou - All rights reserved
+    </footer>
+</div>
+</body>
+</html>
